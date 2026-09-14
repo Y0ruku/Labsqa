@@ -1,0 +1,813 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.12.4 on win32)" generated="2026-09-14T23:15:46.981468" rpa="false" schemaversion="5">
+<suite id="s1" name="UAT-Lab11-002" source="D:\labsqa\labrobot\chormefortesting\UAT-Lab11-002.robot">
+<test id="s1-t1" name="UAT-Lab11-002" line="12">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-09-14T23:15:47.597092" level="INFO">${chrome_options} = &lt;selenium.webdriver.chrome.options.Options object at 0x0000029E624FA7B0&gt;</msg>
+<var>${chrome_options}</var>
+<arg>sys.modules["selenium.webdriver"].ChromeOptions()</arg>
+<arg>sys</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-09-14T23:15:47.590140" elapsed="0.006952"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<arg>setattr($chrome_options, "binary_location", r"${CHROME_BROWSER_PATH}")</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-09-14T23:15:47.597092" elapsed="0.002064"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>--start-maximized</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2026-09-14T23:15:47.599156" elapsed="0.001006"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-09-14T23:15:47.602193" level="WARN">executable_path is being deprecated. Please use service to configure the driver's executable_path as per documentation.</msg>
+<msg time="2026-09-14T23:15:47.602193" level="INFO">Opening browser 'Chrome' to base url 'http://sampleapp.tricentis.com/'.</msg>
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+<arg>executable_path=${CHROMEDRIVER_PATH}</arg>
+<arg>options=${chrome_options}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-09-14T23:15:47.601193" elapsed="8.110708"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-09-14T23:15:55.712937" elapsed="0.006484"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Tricentis Vehicle Insurance</arg>
+<arg>20s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-09-14T23:15:55.720562" elapsed="0.042559"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>xpath=//a[contains(normalize-space(.),"Automobile")]</arg>
+<arg>20s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-09-14T23:15:55.763121" elapsed="0.020736"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>========================================</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-09-14T23:15:55.784863" elapsed="0.001008"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>STEP 1 PASS</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-09-14T23:15:55.785871" elapsed="0.000994"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>เปิดเว็บไซต์สำเร็จ</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-09-14T23:15:55.788270" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>========================================</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-09-14T23:15:55.788270" elapsed="0.001505"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-09-14T23:15:55.789775" elapsed="2.659259"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-09-14T23:15:58.449540" level="INFO">${chrome_options} = &lt;selenium.webdriver.chrome.options.Options object at 0x0000029E62560440&gt;</msg>
+<var>${chrome_options}</var>
+<arg>sys.modules["selenium.webdriver"].ChromeOptions()</arg>
+<arg>sys</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-09-14T23:15:58.449540" elapsed="0.000000"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<arg>setattr($chrome_options, "binary_location", r"${CHROME_BROWSER_PATH}")</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-09-14T23:15:58.449540" elapsed="0.001024"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>--start-maximized</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2026-09-14T23:15:58.450564" elapsed="0.000537"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-09-14T23:15:58.451101" level="WARN">executable_path is being deprecated. Please use service to configure the driver's executable_path as per documentation.</msg>
+<msg time="2026-09-14T23:15:58.452105" level="INFO">Opening browser 'Chrome' to base url 'http://sampleapp.tricentis.com/'.</msg>
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+<arg>executable_path=${CHROMEDRIVER_PATH}</arg>
+<arg>options=${chrome_options}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-09-14T23:15:58.451101" elapsed="10.375966"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-09-14T23:16:08.828065" elapsed="0.004060"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>xpath=//a[contains(normalize-space(.),"Automobile")]</arg>
+<arg>20s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-09-14T23:16:08.834743" elapsed="0.022006"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-09-14T23:16:08.859858" level="INFO">Clicking element 'xpath=//a[contains(normalize-space(.),"Automobile")]'.</msg>
+<arg>xpath=//a[contains(normalize-space(.),"Automobile")]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-14T23:16:08.858674" elapsed="2.065671"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Enter Vehicle Data</arg>
+<arg>20s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-09-14T23:16:10.924345" elapsed="0.014440"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>id=make</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-09-14T23:16:10.939843" elapsed="0.018416"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-09-14T23:16:10.958769" level="INFO">Clicking element 'id=nextenterinsurantdata'.</msg>
+<arg>id=nextenterinsurantdata</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-14T23:16:10.958769" elapsed="0.115821"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-09-14T23:16:13.075994" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-09-14T23:16:11.074590" elapsed="2.001404"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-09-14T23:16:13.215494" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-11.png"&gt;&lt;img src="selenium-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-09-14T23:16:13.215494" level="FAIL">Page should have contained text 'Please fill out this field' but did not.</msg>
+<arg>Please fill out this field</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="FAIL" start="2026-09-14T23:16:13.075994" elapsed="0.143640">Page should have contained text 'Please fill out this field' but did not.</status>
+</kw>
+<msg time="2026-09-14T23:16:13.221141" level="INFO">${vehicle_error} = False</msg>
+<var>${vehicle_error}</var>
+<arg>Page Should Contain</arg>
+<arg>Please fill out this field</arg>
+<doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2026-09-14T23:16:13.075994" elapsed="0.145147"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-09-14T23:16:13.237035" level="INFO">Current page contains text 'Enter Vehicle Data'.</msg>
+<arg>Enter Vehicle Data</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-09-14T23:16:13.223946" elapsed="0.014596"/>
+</kw>
+<msg time="2026-09-14T23:16:13.238542" level="INFO">${vehicle_still_here} = True</msg>
+<var>${vehicle_still_here}</var>
+<arg>Page Should Contain</arg>
+<arg>Enter Vehicle Data</arg>
+<doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2026-09-14T23:16:13.221141" elapsed="0.017401"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>========================================</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-09-14T23:16:13.238542" elapsed="0.001258"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>STEP 2</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-09-14T23:16:13.240806" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Vehicle Data ไม่ครบถ้วน</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-09-14T23:16:13.240806" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>ระบบไม่สามารถดำเนินการต่อได้</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-09-14T23:16:13.242065" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>STEP 2 PASS</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-09-14T23:16:13.242065" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>========================================</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-09-14T23:16:13.242065" elapsed="0.000000"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-09-14T23:16:13.242065" elapsed="2.787976"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-09-14T23:16:16.031043" level="INFO">${chrome_options} = &lt;selenium.webdriver.chrome.options.Options object at 0x0000029E62561B20&gt;</msg>
+<var>${chrome_options}</var>
+<arg>sys.modules["selenium.webdriver"].ChromeOptions()</arg>
+<arg>sys</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-09-14T23:16:16.030041" elapsed="0.001002"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<arg>setattr($chrome_options, "binary_location", r"${CHROME_BROWSER_PATH}")</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-09-14T23:16:16.032042" elapsed="0.000000"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>--start-maximized</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2026-09-14T23:16:16.032042" elapsed="0.000000"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-09-14T23:16:16.033315" level="WARN">executable_path is being deprecated. Please use service to configure the driver's executable_path as per documentation.</msg>
+<msg time="2026-09-14T23:16:16.033315" level="INFO">Opening browser 'Chrome' to base url 'http://sampleapp.tricentis.com/'.</msg>
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+<arg>executable_path=${CHROMEDRIVER_PATH}</arg>
+<arg>options=${chrome_options}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-09-14T23:16:16.032042" elapsed="6.737548"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-09-14T23:16:22.770356" elapsed="0.005870"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>xpath=//a[contains(normalize-space(.),"Automobile")]</arg>
+<arg>20s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-09-14T23:16:22.776226" elapsed="0.029046"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-09-14T23:16:22.806305" level="INFO">Clicking element 'xpath=//a[contains(normalize-space(.),"Automobile")]'.</msg>
+<arg>xpath=//a[contains(normalize-space(.),"Automobile")]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-14T23:16:22.806305" elapsed="1.651687"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Enter Vehicle Data</arg>
+<arg>20s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-09-14T23:16:24.460043" elapsed="0.020283"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>id=make</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-09-14T23:16:24.481312" elapsed="0.028818"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2026-09-14T23:16:24.513460" level="INFO">Selecting options from selection list 'id=make' by label BMW.</msg>
+<arg>id=make</arg>
+<arg>BMW</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2026-09-14T23:16:24.512951" elapsed="0.133881"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-14T23:16:24.647832" level="INFO">Typing text '110' into text field 'id=engineperformance'.</msg>
+<arg>id=engineperformance</arg>
+<arg>110</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-14T23:16:24.647832" elapsed="0.157085"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-14T23:16:24.805958" level="INFO">Typing text '09/09/2020' into text field 'id=dateofmanufacture'.</msg>
+<arg>id=dateofmanufacture</arg>
+<arg>09/09/2020</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-14T23:16:24.804917" elapsed="0.207000"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2026-09-14T23:16:25.013902" level="INFO">Selecting options from selection list 'id=numberofseats' by label 5.</msg>
+<arg>id=numberofseats</arg>
+<arg>5</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2026-09-14T23:16:25.011917" elapsed="0.138899"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2026-09-14T23:16:25.151864" level="INFO">Selecting options from selection list 'id=fuel' by label Electric Power.</msg>
+<arg>id=fuel</arg>
+<arg>Electric Power</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2026-09-14T23:16:25.150816" elapsed="0.164194"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-14T23:16:25.315010" level="INFO">Typing text '30000' into text field 'id=listprice'.</msg>
+<arg>id=listprice</arg>
+<arg>30000</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-14T23:16:25.315010" elapsed="0.123687"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-14T23:16:25.439700" level="INFO">Typing text 'CKK1234' into text field 'id=licenseplatenumber'.</msg>
+<arg>id=licenseplatenumber</arg>
+<arg>CKK1234</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-14T23:16:25.439700" elapsed="0.169288"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-14T23:16:25.610993" level="INFO">Typing text '10000' into text field 'id=annualmileage'.</msg>
+<arg>id=annualmileage</arg>
+<arg>10000</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-14T23:16:25.609989" elapsed="0.177177"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-09-14T23:16:25.788681" level="INFO">Clicking element 'id=nextenterinsurantdata'.</msg>
+<arg>id=nextenterinsurantdata</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-14T23:16:25.787166" elapsed="0.132271"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Enter Insurant Data</arg>
+<arg>20s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-09-14T23:16:25.919437" elapsed="0.037716"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>id=firstname</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-09-14T23:16:25.966309" elapsed="0.041679"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-14T23:16:26.010743" level="INFO">Typing text 'Wichai' into text field 'id=firstname'.</msg>
+<arg>id=firstname</arg>
+<arg>Wichai</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-14T23:16:26.010743" elapsed="0.198596"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-14T23:16:26.210341" level="INFO">Typing text 'Sandee' into text field 'id=lastname'.</msg>
+<arg>id=lastname</arg>
+<arg>Sandee</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-14T23:16:26.209339" elapsed="0.155951"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-14T23:16:26.365290" level="INFO">Typing text '01/31/1990' into text field 'id=birthdate'.</msg>
+<arg>id=birthdate</arg>
+<arg>01/31/1990</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-14T23:16:26.365290" elapsed="0.217554"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-09-14T23:16:26.584213" level="INFO">Executing JavaScript:
+document.getElementById("gendermale").click();
+Without any arguments.</msg>
+<arg>document.getElementById("gendermale").click();</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-09-14T23:16:26.582844" elapsed="0.017281"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-14T23:16:26.601127" level="INFO">Typing text 'KKU' into text field 'id=streetaddress'.</msg>
+<arg>id=streetaddress</arg>
+<arg>KKU</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-14T23:16:26.601127" elapsed="0.146549"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2026-09-14T23:16:26.748715" level="INFO">Selecting options from selection list 'id=country' by label Thailand.</msg>
+<arg>id=country</arg>
+<arg>Thailand</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2026-09-14T23:16:26.747676" elapsed="0.122870"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-09-14T23:16:26.871853" level="INFO">Clicking element 'id=nextenterproductdata'.</msg>
+<arg>id=nextenterproductdata</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-14T23:16:26.871853" elapsed="0.117348"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-09-14T23:16:28.996969" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-09-14T23:16:26.992379" elapsed="2.005101"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>========================================</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-09-14T23:16:28.997987" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>STEP 3</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-09-14T23:16:28.997987" elapsed="0.001027"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Insurant Data ไม่ครบถ้วน</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-09-14T23:16:28.999481" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Zip Code ไม่ได้กรอก</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-09-14T23:16:29.000227" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>City ไม่ได้กรอก</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-09-14T23:16:29.000227" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Occupation ไม่ได้กรอก</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-09-14T23:16:29.000227" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Hobbies ไม่ได้กรอก</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-09-14T23:16:29.001733" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>ระบบไม่สามารถดำเนินการต่อได้</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-09-14T23:16:29.001733" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>STEP 3 PASS</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-09-14T23:16:29.002736" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>========================================</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-09-14T23:16:29.002736" elapsed="0.000000"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-09-14T23:16:29.002736" elapsed="2.727078"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-09-14T23:16:31.731320" level="INFO">${chrome_options} = &lt;selenium.webdriver.chrome.options.Options object at 0x0000029E6256B770&gt;</msg>
+<var>${chrome_options}</var>
+<arg>sys.modules["selenium.webdriver"].ChromeOptions()</arg>
+<arg>sys</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-09-14T23:16:31.729814" elapsed="0.001506"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<arg>setattr($chrome_options, "binary_location", r"${CHROME_BROWSER_PATH}")</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-09-14T23:16:31.731320" elapsed="0.000000"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>--start-maximized</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2026-09-14T23:16:31.731320" elapsed="0.000000"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-09-14T23:16:31.732791" level="WARN">executable_path is being deprecated. Please use service to configure the driver's executable_path as per documentation.</msg>
+<msg time="2026-09-14T23:16:31.732791" level="INFO">Opening browser 'Chrome' to base url 'http://sampleapp.tricentis.com/'.</msg>
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+<arg>executable_path=${CHROMEDRIVER_PATH}</arg>
+<arg>options=${chrome_options}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-09-14T23:16:31.732791" elapsed="7.512601"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-09-14T23:16:39.246933" elapsed="0.005339"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>xpath=//a[contains(normalize-space(.),"Automobile")]</arg>
+<arg>20s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-09-14T23:16:39.252787" elapsed="0.014719"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-09-14T23:16:39.270563" level="INFO">Clicking element 'xpath=//a[contains(normalize-space(.),"Automobile")]'.</msg>
+<arg>xpath=//a[contains(normalize-space(.),"Automobile")]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-14T23:16:39.269510" elapsed="1.827056"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Enter Vehicle Data</arg>
+<arg>20s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-09-14T23:16:41.097073" elapsed="0.025045"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2026-09-14T23:16:41.123124" level="INFO">Selecting options from selection list 'id=make' by label BMW.</msg>
+<arg>id=make</arg>
+<arg>BMW</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2026-09-14T23:16:41.123124" elapsed="0.200128"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-14T23:16:41.323252" level="INFO">Typing text '110' into text field 'id=engineperformance'.</msg>
+<arg>id=engineperformance</arg>
+<arg>110</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-14T23:16:41.323252" elapsed="0.168250"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-14T23:16:41.492686" level="INFO">Typing text '09/09/2020' into text field 'id=dateofmanufacture'.</msg>
+<arg>id=dateofmanufacture</arg>
+<arg>09/09/2020</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-14T23:16:41.491502" elapsed="0.192633"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2026-09-14T23:16:41.685140" level="INFO">Selecting options from selection list 'id=numberofseats' by label 5.</msg>
+<arg>id=numberofseats</arg>
+<arg>5</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2026-09-14T23:16:41.684135" elapsed="0.095451"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2026-09-14T23:16:41.780584" level="INFO">Selecting options from selection list 'id=fuel' by label Electric Power.</msg>
+<arg>id=fuel</arg>
+<arg>Electric Power</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2026-09-14T23:16:41.780584" elapsed="0.111673"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-14T23:16:41.894354" level="INFO">Typing text '30000' into text field 'id=listprice'.</msg>
+<arg>id=listprice</arg>
+<arg>30000</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-14T23:16:41.893352" elapsed="0.140714"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-14T23:16:42.036069" level="INFO">Typing text 'CKK1234' into text field 'id=licenseplatenumber'.</msg>
+<arg>id=licenseplatenumber</arg>
+<arg>CKK1234</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-14T23:16:42.035073" elapsed="0.141791"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-14T23:16:42.177903" level="INFO">Typing text '10000' into text field 'id=annualmileage'.</msg>
+<arg>id=annualmileage</arg>
+<arg>10000</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-14T23:16:42.176864" elapsed="0.118469"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-09-14T23:16:42.297465" level="INFO">Clicking element 'id=nextenterinsurantdata'.</msg>
+<arg>id=nextenterinsurantdata</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-14T23:16:42.295333" elapsed="0.133826"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Enter Insurant Data</arg>
+<arg>20s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-09-14T23:16:42.430666" elapsed="0.031270"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>id=firstname</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-09-14T23:16:42.462960" elapsed="0.031304"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-14T23:16:42.495734" level="INFO">Typing text 'Wichai' into text field 'id=firstname'.</msg>
+<arg>id=firstname</arg>
+<arg>Wichai</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-14T23:16:42.495734" elapsed="0.163972"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-14T23:16:42.659706" level="INFO">Typing text 'Sandee' into text field 'id=lastname'.</msg>
+<arg>id=lastname</arg>
+<arg>Sandee</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-14T23:16:42.659706" elapsed="0.127080"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-14T23:16:42.788185" level="INFO">Typing text '01/31/1990' into text field 'id=birthdate'.</msg>
+<arg>id=birthdate</arg>
+<arg>01/31/1990</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-14T23:16:42.786786" elapsed="0.172902"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-09-14T23:16:42.959688" level="INFO">Executing JavaScript:
+document.getElementById("gendermale").click();
+Without any arguments.</msg>
+<arg>document.getElementById("gendermale").click();</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-09-14T23:16:42.959688" elapsed="0.019715"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-14T23:16:42.981419" level="INFO">Typing text 'KKU' into text field 'id=streetaddress'.</msg>
+<arg>id=streetaddress</arg>
+<arg>KKU</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-14T23:16:42.980406" elapsed="0.145103"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2026-09-14T23:16:43.125509" level="INFO">Selecting options from selection list 'id=country' by label Thailand.</msg>
+<arg>id=country</arg>
+<arg>Thailand</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2026-09-14T23:16:43.125509" elapsed="0.128736"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-14T23:16:43.255259" level="INFO">Typing text '40002' into text field 'id=zipcode'.</msg>
+<arg>id=zipcode</arg>
+<arg>40002</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-14T23:16:43.255259" elapsed="0.157565"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-14T23:16:43.415842" level="INFO">Typing text 'Khon Kaen' into text field 'id=city'.</msg>
+<arg>id=city</arg>
+<arg>Khon Kaen</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-14T23:16:43.414839" elapsed="0.121121"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2026-09-14T23:16:43.536962" level="INFO">Selecting options from selection list 'id=occupation' by label Employee.</msg>
+<arg>id=occupation</arg>
+<arg>Employee</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2026-09-14T23:16:43.535960" elapsed="0.124860"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-09-14T23:16:43.661818" level="INFO">Executing JavaScript:
+document.getElementById("other").click();
+Without any arguments.</msg>
+<arg>document.getElementById("other").click();</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-09-14T23:16:43.661818" elapsed="0.022356"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-09-14T23:16:43.685178" level="INFO">Clicking element 'id=nextenterproductdata'.</msg>
+<arg>id=nextenterproductdata</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-14T23:16:43.685178" elapsed="0.110588"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Enter Product Data</arg>
+<arg>20s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-09-14T23:16:43.795766" elapsed="0.041196"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>id=startdate</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-09-14T23:16:43.838478" elapsed="0.020653"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-14T23:16:43.860134" level="INFO">Typing text '11/14/2026' into text field 'id=startdate'.</msg>
+<arg>id=startdate</arg>
+<arg>11/14/2026</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-14T23:16:43.860134" elapsed="0.218250"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-09-14T23:16:44.078384" level="INFO">Clicking element 'id=nextselectpriceoption'.</msg>
+<arg>id=nextselectpriceoption</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-14T23:16:44.078384" elapsed="0.090104"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-09-14T23:16:46.175649" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-09-14T23:16:44.171513" elapsed="2.004136"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>========================================</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-09-14T23:16:46.176156" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>STEP 4</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-09-14T23:16:46.176662" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Product Data ไม่ครบถ้วน</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-09-14T23:16:46.176662" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Insurance Sum ไม่ได้เลือก</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-09-14T23:16:46.176662" elapsed="0.001017"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Merit Rating ไม่ได้เลือก</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-09-14T23:16:46.177679" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Damage Insurance ไม่ได้เลือก</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-09-14T23:16:46.178705" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Euro Protection ไม่ได้เลือก</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-09-14T23:16:46.179708" elapsed="0.001008"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Courtesy Car ไม่ได้เลือก</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-09-14T23:16:46.180716" elapsed="0.004011"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>ระบบไม่สามารถดำเนินการต่อไปยัง Select Price Option ได้</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-09-14T23:16:46.184727" elapsed="0.001007"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>STEP 4 PASS</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-09-14T23:16:46.186741" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>========================================</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-09-14T23:16:46.186741" elapsed="0.001068"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>========================================</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-09-14T23:16:46.188266" elapsed="0.000604"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>UAT-Lab11-002</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-09-14T23:16:46.188870" elapsed="0.001507"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>การขอใบเสนอราคาผลิตภัณฑ์สำหรับรถยนต์ไม่สำเร็จ</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-09-14T23:16:46.192417" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>ทดสอบข้อมูลไม่ถูกต้องหรือไม่สมบูรณ์ครบ 3 กรณี</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-09-14T23:16:46.192417" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Vehicle Data</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-09-14T23:16:46.194752" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Insurant Data</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-09-14T23:16:46.196244" elapsed="0.000508"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Product Data</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-09-14T23:16:46.197270" elapsed="0.001215"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Test Result: PASS</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-09-14T23:16:46.203514" elapsed="0.002016"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>========================================</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-09-14T23:16:46.216694" elapsed="0.011626"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-09-14T23:16:46.255680" elapsed="2.767991"/>
+</kw>
+<doc>การขอใบเสนอราคาผลิตภัณฑ์สำหรับรถยนต์ไม่สำเร็จ</doc>
+<tag>Lab11</tag>
+<tag>UAT</tag>
+<status status="PASS" start="2026-09-14T23:15:47.588150" elapsed="61.435521"/>
+</test>
+<status status="PASS" start="2026-09-14T23:15:46.983601" elapsed="62.041307"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Lab11</stat>
+<stat pass="1" fail="0" skip="0">UAT</stat>
+</tag>
+<suite>
+<stat name="UAT-Lab11-002" id="s1" pass="1" fail="0" skip="0">UAT-Lab11-002</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-09-14T23:15:47.602193" level="WARN">executable_path is being deprecated. Please use service to configure the driver's executable_path as per documentation.</msg>
+<msg time="2026-09-14T23:15:58.451101" level="WARN">executable_path is being deprecated. Please use service to configure the driver's executable_path as per documentation.</msg>
+<msg time="2026-09-14T23:16:16.033315" level="WARN">executable_path is being deprecated. Please use service to configure the driver's executable_path as per documentation.</msg>
+<msg time="2026-09-14T23:16:31.732791" level="WARN">executable_path is being deprecated. Please use service to configure the driver's executable_path as per documentation.</msg>
+</errors>
+</robot>
